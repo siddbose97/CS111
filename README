@@ -1,0 +1,29 @@
+//NAME: Siddhartha Bose
+//EMAIL: siddhartha.bose@engineering.ucla.edu
+//ID: 704579512
+
+This Tarball is comprised of 4 files:
+
+1. README:
+	A file designed to lay out the contents of the tarball, and elaborate on the functionality, if any of other files
+
+2. lab0.c:
+	The source code file for project0 in CS 111. It is a simple input to output redirection program designed to leverage the dup() function
+	The options the program contains are:
+	a. --input=filename: where input is taken from a file rather than the default STDIN
+	b. --output=fileneame: directs the input data into a file rather than the default STDOUT
+	c. --segfault: forces a segfault when the program is run
+	d. --catch: catches and logs a segfault if it occurs
+3. Makefile: 
+	The file which compiles and executes lab0 under different conditions
+	a. make: compile the executable for lab0
+	b. make check: run a smoke test to check for functionality in lab0.
+			I checked for the --input and --output flags, along with the --catch and --segfault flags as well
+	c. make clean: force the removal for the executable, tarball and any extraneous files
+	d. make dist: creates the tarball with the 5 files required for submission  (2 png's, 1 README, 1 .c file, 1 Makefile)
+4. Backtrace.png: 
+	A screenshot with the backtrace of the segfault option being run in gdb
+
+5. Breakpoint.png:
+	A screenshot with the breakpoint after taking the fault in gdb
+
